@@ -11,7 +11,6 @@
 
 <h3>Genres</h3>
 
-<%# binding.pry %>
 <% @artist.genres.each do |genre| %>
-    <p> <a href="/genres/<%= genre.slug %>"> <%= genre.name.capitalize %> </a> </p>
+    <p> <a href="/genres/<%= genre.slug %>"> <%= genre.name %> </a> </p>
 <% end %>
